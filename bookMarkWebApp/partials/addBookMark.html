@@ -1,0 +1,27 @@
+<form name="addBookMarkForm">
+    <div class="modal-header">
+        <h3 class="modal-title">Add BookMark</h3>
+    </div>
+    <div class="modal-body">
+        <div>
+            <label for="bookMarkName">BookMark Name <i class="star-require">*</i></label>
+            <input type="text" class="form-control" placeholder="Bookmark Name" name="bookMarkName" ng-model="vdo.bookMarkName" required ng-maxlength="20">
+            <div ng-messages="addBookMarkForm.bookMarkName.$error" ng-if="addBookMarkForm.bookMarkName.$touched">
+                <small class="warning-text" ng-message="maxlength">BookMark name is too long than 20 Characters.</small>
+                <small class="warning-text" ng-message="required">BookMark name is required.</small>
+            </div>
+        </div>
+        <div>
+            <label for="bookMarkUrl">BookMark Url <i class="star-require">*</i></label>
+            <input type="text" class="form-control" placeholder="Bookmark Url" name="bookMarkUrl" ng-model="vdo.bookMarkUrl" ng-pattern="vdo.regEx">
+            <div ng-messages="addBookMarkForm.bookMarkUrl.$error" ng-if="addBookMarkForm.bookMarkUrl.$touched">
+                <small class="warning-text" ng-message="required">Bookmark url is required.</small>
+                <small class="warning-text" ng-message="pattern">Bookmark url is wrong.</small>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok(vdo)">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="close()">Cancel</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+/<form class="container">
+    <div class="row home-container">
+        <div class="panel">
+            <div class="panel-body">
+                <h3>BookMark Folders</h3>
+                <button type="button" class="btn btn-primary pull-right" ng-click="vdo.addFolder(vdo)">+Add Folder</button>
+                <div class="col-xs-12">
+                    <!-- <div class="form-group">
+                        <label for="usr">Name:</label>
+                        <input type="text" ng-model="userName"  class="form-control" >
+                        {{userName}}
+                    </div> -->
+                    <div class="col-xs-12">
+                        <div class="col-xs-2 text-center folder" ng-repeat='folder in vdo.folderDatas'  ng-click="vdo.getFolderData(folder.folderID)">
+                            <h4 class="margin-top-1" >{{folder.folderName}}</h4>
+                            <p>
+                            <small class="small-class">Created Date : {{folder.createdDate|date:'MM/dd/yyyy'}}</small>
+                            </p>
+                            <a ng-click="vdo.deleteFolder(vdo,folder);$event.stopPropagation();$event.preventDefault()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- use ng-submit to catch the form submission and use our Angular function -->
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,19 @@
+<form name="moveFolderForm">
+    <div class="modal-header">
+        <h3 class="modal-title">Add Folder</h3>
+    </div>
+    <div class="modal-body">
+        <label for="exampleInputEmail1">Folder Name <i class="star-require">*</i>
+        </label>
+        <select name="folderName" class="form-control" ng-model="vdo.reqObj.toFolder" ng-options="folder.folderID as folder.folderName for folder in vdo.folderDatas" required>
+            <option value="">Select</option>
+        </select>
+        <div ng-messages="moveFolderForm.folderName.$error" ng-if="moveFolderForm.folderName.$touched">
+            <small class="warning-text" ng-message="required">folder name is required.</small>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok(vdo)">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="close()">Cancel</button>
+    </div>
+</form>

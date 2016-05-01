@@ -1,0 +1,84 @@
+/* BASIC STYLINGS
+============================================================================= */
+
+body {
+    padding-top: 20px;
+    background: #F9F0F0;
+}
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.navbar a:focus {
+    outline: 0;
+}
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+.navbar-default, .navbar-inverse {
+    border: 0;
+}
+/*pre {
+    margin-bottom: 20px;
+}*/
+/* form styling */
+
+.home-container {
+    margin-top: 100px;
+}
+#form-container .page-header {
+    /*background: #151515;*/
+    
+    margin: 0;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* _Table : table Header color*/
+
+
+.folder {
+    background-color: #F1D83D;
+    min-height: 130px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 5px 58px 5px 5px;
+    width: 160px;
+    font-size: 14px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.margin-top-1 {
+    margin-top: 40px;
+}
+.small-class {
+    font-size: 10px;
+}
+.warning-text {
+    font-size: 10px;
+    color: red;
+}
+.star-require {
+    color: #ed1c24;
+}
+.btn {
+    margin-left: 10px
+}
+.margin-bt-1 {
+    margin-bottom: 20px;
+}
+.bookMarkFolder {
+    margin: 5px;
+    width: 349px;
+    height: 160px;
+}
+.pointer{
+    cursor: pointer;
+}
+.font-color-choc{
+    color:#D2691E;
+}

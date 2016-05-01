@@ -1,0 +1,24 @@
+<form name="confirmForm" >
+        <div class="modal-header modal-primary">
+            <h4 class="modal-title pull-left">{{title}}</h4>
+            <!-- Hiding Close Icon -->
+            <!-- <i class="fa fa-times pull-right" ng-click="close()"></i> -->
+        </div>
+        <div class="modal-body">
+        <!-- Alert Content-->
+           <div class="row txt-color-4">
+                <div class="col-xs-12">
+                    <p>{{message}}</p>
+                </div>
+           </div>
+        <!-- modal buttons -->
+            <div class="row margin-t-1">
+                <div class="col-xs-6 modal-btn-fixed">
+                <button type="submit" class="btn btn-info pull-right" ng-click="ok()">{{IsYesNo?'Yes':'Ok'}}</button>
+                </div>
+                <div class="col-xs-6 modal-btn-fixed">
+                <button  class="btn btn-info pull-left" ng-click="close()">{{IsYesNo?'No':'Cancel'}}</button>
+                </div>
+            </div>
+        </div>
+</form>
