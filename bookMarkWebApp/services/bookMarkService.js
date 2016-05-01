@@ -2,7 +2,7 @@ var bookMarkService = function(dialogService, serRestApi, $state) {
     var bookMarkServiceRef = this;
 
      var defaultErrorHandler = function(response) {
-        return dialogService.showAlert('error', 'error', response.data.errorData, '', '', false);
+        return dialogService.showAlert('error', 'error', response.data.error.errorData, '', '', false);
     };
 
     var addFolderController = ['$scope', 'data', '$uibModalInstance', function($scope, data, $uibModalInstance) {

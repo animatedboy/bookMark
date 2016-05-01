@@ -12,21 +12,7 @@
                 <p data-ng-if="!isHtml">{{message}}</p>
             </div>
         </div>
-        <div class="row txt-color-4" data-ng-if="info && info.length && info[0].messages" data-ng-repeat="error in info track by $index">
-            <div class="col-xs-9 text-center">
-                <p>{{error.message}}</p>
-            </div>
-            <div class="col-xs-3" data-ng-if="error.messages && error.messages.length">
-                <button data-ng-show="!error.showInfo" class="btn btn-info" ng-click="error.showInfo=true;">Show more info</button>
-                <button data-ng-show="error.showInfo" class="btn btn-info" ng-click="error.showInfo=false;">Hide more info</button>
-            </div>
-
-            <ul data-ng-show="error.messages && error.messages.length && error.showInfo">
-                <li class="col-xs-12" data-ng-repeat="msg in error.messages track by $index">
-                    {{msg}}
-                </li>
-            </ul>
-        </div>
+        
         <!-- modal buttons -->
         <div class="row margin-t-1">
             <div class="col-xs-12 modal-btn-fixed">
